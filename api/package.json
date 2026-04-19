@@ -1,0 +1,22 @@
+{
+  "name": "snap-scan-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Retailer-facing SNAP eligibility API with Stripe billing and Supabase backend",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs",
+    "migrate": "node scripts/migrate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "stripe": "^16.0.0"
+  }
+}

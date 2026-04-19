@@ -4,3 +4,13 @@ node_modules/
 .idea/
 *.log
 _qa_*.png
+
+# env / secrets
+.env
+.env.local
+api/.env
+api/.env.local
+
+# build
+dist/
+build/

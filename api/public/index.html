@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SnapScan for Retailers — SNAP eligibility API</title>
+<meta name="description" content="Keep your EBT flags current across all 22 SNAP-restricted states. One API call per UPC. $29/mo to start, 14-day trial."/>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=gambarino@400&display=swap"/>
+<link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<header>
+  <div class="wrap hrow">
+    <a class="brand" href="./">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="7" width="2" height="18" fill="currentColor"/><rect x="7" y="7" width="3" height="18" fill="currentColor"/><rect x="12" y="7" width="1.5" height="18" fill="currentColor"/><rect x="15.5" y="7" width="4" height="18" fill="currentColor"/><rect x="21.5" y="7" width="2" height="18" fill="currentColor"/><rect x="25.5" y="7" width="3" height="18" fill="currentColor"/>
+      </svg>
+      <span>SnapScan <em>for Retailers</em></span>
+    </a>
+    <nav><a href="#pricing">Pricing</a><a href="#docs">Docs</a><a href="#try">Try it</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">API for POS integrators & grocers</p>
+      <h1>SNAP eligibility for any UPC, in any state, in one API call.</h1>
+      <p class="lede">
+        2026 SNAP restrictions differ across 22 states and keep changing. SnapScan keeps your EBT flags accurate — pass a UPC and a state code, get back <code>eligible: true/false</code> with reasons. Cache-backed, audit-logged, built for checkout latency.
+      </p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#pricing">See pricing</a>
+        <a class="btn btn-ghost" href="#try">Try without signing up</a>
+      </div>
+      <div class="codeblock">
+        <div class="codehead"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="codelabel">curl</span></div>
+        <pre><code>$ curl -H "Authorization: Bearer ss_live_xxx" \
+  "https://api.snapscan.app/api/eligibility?upc=049000028911&amp;state=FL"
+
+{
+  "upc": "049000028911",
+  "state": "FL",
+  "found": true,
+  "eligible": false,
+  "reasons": [{ "id": "soda", "label": "Soda",
+    "blurb": "Carbonated beverages sweetened with added sugar..." }],
+  "product": { "name": "Diet Coke", "brand": "Coca-Cola" }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="section-intro">14-day free trial on every plan. No credit card to try the API in demo mode — use the key <code>demo_anything</code>.</p>
+      <div class="plans" id="plans"></div>
+    </div>
+  </section>
+
+  <section class="try" id="try">
+    <div class="wrap">
+      <h2>Try it — no signup</h2>
+      <p class="section-intro">Demo mode uses real product data. In production you'd pass your live key.</p>
+      <div class="try-card">
+        <label>State
+          <select id="tryState"></select>
+        </label>
+        <label>UPC
+          <input id="tryUPC" placeholder="049000028911" value="049000028911"/>
+        </label>
+        <button class="btn btn-primary" id="tryBtn">Check eligibility</button>
+        <pre class="try-out" id="tryOut">Results appear here.</pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="docs" id="docs">
+    <div class="wrap">
+      <h2>Endpoints</h2>
+      <table class="endpoints">
+        <tr><th>Method</th><th>Path</th><th>Purpose</th></tr>
+        <tr><td>GET</td><td><code>/api/eligibility</code></td><td>Check one UPC for one state.</td></tr>
+        <tr><td>GET</td><td><code>/api/search</code></td><td>Full-text product search with eligibility verdicts.</td></tr>
+        <tr><td>POST</td><td><code>/api/batch</code></td><td>Up to 100 UPCs at once. Ideal for POS pricebook sync.</td></tr>
+        <tr><td>GET</td><td><code>/api/states</code></td><td>All 22 covered states with rules.</td></tr>
+        <tr><td>GET</td><td><code>/api/usage</code></td><td>Current month usage + quota.</td></tr>
+        <tr><td>GET</td><td><code>/api/plans</code></td><td>Plan catalog.</td></tr>
+      </table>
+      <p class="microcopy">Auth: <code>Authorization: Bearer &lt;key&gt;</code> or <code>?api_key=&lt;key&gt;</code>. Rate limits are on plan quotas and per-IP (120 rpm).</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>SnapScan · SNAP eligibility API · <a href="/">Consumer app</a> · <a href="https://github.com/lexxautomates/snap-scan" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
