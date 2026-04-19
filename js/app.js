@@ -5,13 +5,21 @@
   const centroids = window.SNAP_STATE_CENTROIDS;
 
   // ---- State management ----
+  // Uses localStorage when available, falls back to in-memory (for sandboxed previews).
   const LS_KEY = "snapScanState";
+  let memState = null;
+  function storageGet() {
+    try { return localStorage.getItem(LS_KEY); } catch (e) { return memState; }
+  }
+  function storageSet(v) {
+    try { localStorage.setItem(LS_KEY, v); } catch (e) { memState = v; }
+  }
   function getActiveState() {
-    const code = localStorage.getItem(LS_KEY);
+    const code = storageGet();
     return states.find(s => s.code === code) || null;
   }
   function setActiveState(code) {
-    localStorage.setItem(LS_KEY, code);
+    storageSet(code);
     render();
   }
 
