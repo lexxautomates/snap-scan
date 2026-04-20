@@ -1,8 +1,9 @@
 // SnapScan service worker — cache-first shell, network-first for OFF API.
-const VERSION = "snapscan-v3";
+const VERSION = "snapscan-v4";
 const SHELL = [
   "./",
   "./index.html",
+  "./privacy.html",
   "./styles.css",
   "./manifest.webmanifest",
   "./js/i18n.js",
@@ -11,6 +12,7 @@ const SHELL = [
   "./js/data-items.js",
   "./js/off.js",
   "./js/scanner.js",
+  "./js/consent.js",
   "./js/app.js",
   "./icons/icon.svg"
 ];

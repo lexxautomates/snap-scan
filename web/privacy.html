@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e85d1a" />
+    <title>Privacy Policy — SnapScan</title>
+    <meta
+      name="description"
+      content="SnapScan privacy policy. What we collect, what we don't, how cookies and advertising work, and your rights under GDPR and CCPA."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=gambarino@400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9946937297371053"
+         crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="./" aria-label="SnapScan — home">
+          <svg class="logo" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="7" width="2" height="18" fill="currentColor"/>
+            <rect x="7" y="7" width="3" height="18" fill="currentColor"/>
+            <rect x="12" y="7" width="1.5" height="18" fill="currentColor"/>
+            <rect x="15.5" y="7" width="4" height="18" fill="currentColor"/>
+            <rect x="21.5" y="7" width="2" height="18" fill="currentColor"/>
+            <rect x="25.5" y="7" width="3" height="18" fill="currentColor"/>
+          </svg>
+          <span>SnapScan</span>
+        </a>
+        <nav aria-label="Primary" class="site-nav">
+          <a href="./#directory" data-i18n="nav.directory">Directory</a>
+          <a href="./#how" data-i18n="nav.how">How it works</a>
+          <a href="./#sources" data-i18n="nav.sources">Sources</a>
+          <div class="lang-switch">
+            <label for="langSelect" class="sr-only" data-i18n="nav.language">Language</label>
+            <select id="langSelect" aria-label="Language">
+              <option value="en" data-i18n="lang.en">English</option>
+              <option value="es" data-i18n="lang.es">Español</option>
+              <option value="ht" data-i18n="lang.ht">Kreyòl Ayisyen</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="legal-page">
+      <article class="wrap legal">
+
+        <!-- ============ ENGLISH ============ -->
+        <section class="legal-lang" data-lang="en">
+          <p class="eyebrow">Legal · Privacy</p>
+          <h1>Privacy Policy</h1>
+          <p class="muted"><strong>Last updated:</strong> April 19, 2026</p>
+
+          <p class="lede">
+            SnapScan is a free tool that helps SNAP/EBT shoppers check whether a product is eligible under their state's 2026 restrictions. We built it to protect shoppers from embarrassment at checkout — which means <strong>we don't want your data</strong> and we've designed the product accordingly. This page explains exactly what we do and don't collect, how cookies and advertising work, and your rights.
+          </p>
+
+          <div class="tldr">
+            <h3>The short version</h3>
+            <ul>
+              <li>We don't ask you to create an account. We don't know who you are.</li>
+              <li>We don't store what you scan or search for on our servers.</li>
+              <li>Your selected state is saved locally on your device only.</li>
+              <li>Location detection is optional and happens once; we don't track you over time.</li>
+              <li>Google AdSense may serve ads and use cookies per their own privacy policy.</li>
+              <li>You can deny ad personalization, delete everything, or stop using the site at any time.</li>
+            </ul>
+          </div>
+
+          <h2>1. Who we are</h2>
+          <p>
+            SnapScan is operated by Lexx Automates, a sole-proprietor business based in Coconut Creek, Florida, United States. You can reach us at <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a> for any privacy question, data access request, or deletion request. We respond within 30 days.
+          </p>
+
+          <h2>2. What we collect</h2>
+
+          <h3>2.1 Information you enter</h3>
+          <p>
+            When you use SnapScan, you may type brand names, UPC barcodes, or product names into the search box, and select a U.S. state. This information is processed in your browser to generate an eligibility verdict. We do not send search queries to our own servers for logging or analytics. We do send the UPC or search term to <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts</a> so they can return product data — see Section 4 below.
+          </p>
+
+          <h3>3.2 Location (only if you allow it)</h3>
+          <p>
+            To auto-detect your state, SnapScan can use two optional methods:
+          </p>
+          <ul>
+            <li><strong>IP-based approximation</strong> via a third-party service (ipapi.co). This only happens when you click "Auto-detect my state" or on first visit. Your IP address is sent to that service, which returns an approximate region. We do not receive or store your IP.</li>
+            <li><strong>Browser geolocation</strong> as a fallback. This is only used if you explicitly allow the browser prompt. We compare your coordinates to state centroids locally and keep only the two-letter state code. We do not transmit your coordinates anywhere.</li>
+          </ul>
+          <p>You can deny location access and pick your state manually at any time. We never track you over time.</p>
+
+          <h3>3.3 Camera (only if you scan)</h3>
+          <p>
+            If you use the barcode scanner, your browser will ask permission to access the camera. The camera feed is processed entirely on your device by the <a href="https://github.com/zxing-js/library" target="_blank" rel="noopener">ZXing</a> open-source library. No video, image, or audio is sent to our servers or any third party. As soon as a barcode is recognized or you close the scan dialog, camera access stops.
+          </p>
+
+          <h3>3.4 Technical information</h3>
+          <p>
+            When you load the page, our hosting provider (Perplexity Computer, Cloudflare, or equivalent) receives standard web-server logs: IP address, browser user agent, requested URL, and timestamp. These logs are used solely for abuse prevention and operational monitoring and are typically retained for 30 days.
+          </p>
+
+          <h3>3.5 What we do NOT collect</h3>
+          <ul>
+            <li>Name, email, phone number, or address</li>
+            <li>SNAP/EBT account numbers or benefit balances (we never touch these — we're not connected to USDA or any state system)</li>
+            <li>Payment information (the consumer app is free)</li>
+            <li>Persistent identifiers that follow you across sites</li>
+            <li>Camera images or barcode scan history</li>
+          </ul>
+
+          <h2>3. Cookies and local storage</h2>
+          <p>
+            SnapScan itself does not set any cookies. We use your browser's <strong>localStorage</strong> to remember two small preferences:
+          </p>
+          <ul>
+            <li><code>snapScanState</code> — the two-letter U.S. state code you last picked (e.g. <code>FL</code>)</li>
+            <li><code>snapScanLang</code> — your language preference (<code>en</code>, <code>es</code>, or <code>ht</code>)</li>
+          </ul>
+          <p>
+            These stay on your device until you clear your browser storage. They contain no personally identifying information. If your browser blocks localStorage, SnapScan falls back to in-memory storage and you'll need to reselect your state on each visit.
+          </p>
+          <p>
+            Our service worker also caches the app's HTML, CSS, and JavaScript on your device so SnapScan works offline. You can clear this cache anytime from your browser settings.
+          </p>
+          <p>
+            <strong>Third-party cookies</strong> may be set by Google AdSense — see Section 5.
+          </p>
+
+          <h2>4. Third-party services</h2>
+          <p>We rely on the following third-party services. Each has its own privacy policy:</p>
+          <ul>
+            <li><strong>Open Food Facts</strong> — product lookup by UPC or brand name. When you scan or search, the UPC/query is sent to their API. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts Privacy Policy</a></li>
+            <li><strong>ipapi.co</strong> — optional IP-based state detection. Your IP is sent to their service when you use auto-detect. <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener">ipapi.co Privacy Policy</a></li>
+            <li><strong>Fontshare</strong> (by Indian Type Foundry) — serves the web fonts used on SnapScan. Standard web-server logs only. <a href="https://www.fontshare.com/privacy-policy" target="_blank" rel="noopener">Fontshare Privacy Policy</a></li>
+            <li><strong>unpkg (Cloudflare)</strong> — CDN delivery of the ZXing barcode library. Standard web-server logs only. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></li>
+            <li><strong>Google AdSense</strong> — serves advertising (see Section 5).</li>
+          </ul>
+
+          <h2>5. Advertising (Google AdSense)</h2>
+          <p>
+            SnapScan is free to use. To cover hosting and development costs, we display ads served by <strong>Google AdSense</strong>. Here's how that works and what it means for you:
+          </p>
+          <ul>
+            <li>Google and its advertising partners use cookies, device identifiers, and similar technologies to serve ads based on your prior visits to this and other websites. This is called "personalized advertising."</li>
+            <li>Google uses the <strong>DoubleClick DART cookie</strong> and similar technologies to do this.</li>
+            <li>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
+            <li>You can opt out of third-party vendor use of cookies for personalized ads by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">www.aboutads.info/choices</a> or, if in the EU, <a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">www.youronlinechoices.eu</a>.</li>
+            <li>For more information about how Google uses data from partner sites and apps, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</li>
+            <li>Google's advertising cookies and policies are governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+          </ul>
+          <p>
+            If you're in the European Economic Area, United Kingdom, or Switzerland, SnapScan shows you a consent banner (powered by Google's EU User Consent framework) before loading personalized ads. If you decline, you'll see only non-personalized, context-based ads.
+          </p>
+          <p>
+            We do <strong>not</strong> share your search queries, scanned UPCs, selected state, or any SnapScan usage data with Google or any advertiser.
+          </p>
+
+          <h2>6. Children's privacy</h2>
+          <p>
+            SnapScan is a general-audience tool and is not directed at children under 13. We do not knowingly collect information from children under 13. If you believe a child has provided information, contact us and we'll delete it.
+          </p>
+
+          <h2>7. Your rights</h2>
+
+          <h3>7.1 Everyone</h3>
+          <p>You can at any time:</p>
+          <ul>
+            <li>Clear SnapScan's locally stored data by clearing your browser's site data for our domain</li>
+            <li>Revoke camera or location permissions from your browser settings</li>
+            <li>Stop using the site</li>
+          </ul>
+
+          <h3>7.2 EU / UK / EEA (GDPR)</h3>
+          <p>If you are in the EU, UK, or EEA, you have the right to:</p>
+          <ul>
+            <li>Access, correct, or delete the personal data we process about you</li>
+            <li>Object to processing, including for direct marketing</li>
+            <li>Request restriction of processing</li>
+            <li>Data portability (a copy of your data in a machine-readable format)</li>
+            <li>Withdraw consent at any time (where consent is the legal basis)</li>
+            <li>Lodge a complaint with your local data protection authority</li>
+          </ul>
+          <p>
+            Because we don't collect identifying information, we usually have nothing to access or delete. The main legal basis for our limited processing is our legitimate interest in providing the service and, where applicable, your consent (e.g., for location access or personalized advertising).
+          </p>
+
+          <h3>7.3 California (CCPA / CPRA)</h3>
+          <p>California residents have the right to:</p>
+          <ul>
+            <li>Know what personal information we collect (this policy)</li>
+            <li>Request deletion of personal information</li>
+            <li>Opt out of the "sale" or "sharing" of personal information for cross-context behavioral advertising</li>
+            <li>Not be discriminated against for exercising these rights</li>
+          </ul>
+          <p>
+            SnapScan itself does not sell personal information. Google AdSense's serving of personalized ads may qualify as "sharing" under CPRA; you can opt out via the banner or by enabling Global Privacy Control (GPC) in your browser — we honor GPC signals.
+          </p>
+          <p>
+            To exercise any right, email <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+
+          <h2>8. Data security</h2>
+          <p>
+            SnapScan is served over HTTPS. Because we don't store user data on our servers, there's no user database to breach. The retailer-facing API (a separate product for grocers and POS vendors) does store hashed API keys and usage counts in Supabase; that side has its own privacy considerations and is not used by consumers.
+          </p>
+
+          <h2>9. International transfers</h2>
+          <p>
+            Our services and the third parties we use (Google, Cloudflare, etc.) operate globally. If you access SnapScan from outside the United States, your interaction with those services may involve transferring data to the U.S. or other countries. The third parties listed above maintain safeguards (SCCs, UK IDTA, etc.) where required.
+          </p>
+
+          <h2>10. Changes to this policy</h2>
+          <p>
+            We may update this policy to reflect changes in our practices or in applicable law. We'll update the "Last updated" date above and, for material changes, add a notice on the homepage for at least 30 days.
+          </p>
+
+          <h2>11. Contact</h2>
+          <p>
+            Questions or requests? Email <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- ============ ESPAÑOL ============ -->
+        <section class="legal-lang" data-lang="es" hidden>
+          <p class="eyebrow">Legal · Privacidad</p>
+          <h1>Política de Privacidad</h1>
+          <p class="muted"><strong>Última actualización:</strong> 19 de abril de 2026</p>
+
+          <p class="lede">
+            SnapScan es una herramienta gratuita que ayuda a los compradores de SNAP/EBT a verificar si un producto es elegible según las restricciones 2026 de su estado. La creamos para evitarles momentos incómodos en la caja — por eso <strong>no queremos tus datos</strong> y el producto está diseñado así. Esta página explica exactamente qué recopilamos y qué no, cómo funcionan las cookies y la publicidad, y cuáles son tus derechos.
+          </p>
+
+          <div class="tldr">
+            <h3>Resumen rápido</h3>
+            <ul>
+              <li>No te pedimos crear una cuenta. No sabemos quién eres.</li>
+              <li>No guardamos en nuestros servidores lo que escaneas o buscas.</li>
+              <li>El estado que eliges se guarda solo en tu dispositivo.</li>
+              <li>La detección de ubicación es opcional y ocurre una vez; no te rastreamos con el tiempo.</li>
+              <li>Google AdSense puede mostrar anuncios y usar cookies según su propia política.</li>
+              <li>Puedes rechazar la personalización de anuncios, eliminar todo o dejar de usar el sitio en cualquier momento.</li>
+            </ul>
+          </div>
+
+          <h2>1. Quiénes somos</h2>
+          <p>
+            SnapScan es operado por Lexx Automates, un negocio unipersonal con sede en Coconut Creek, Florida, EE.UU. Puedes contactarnos en <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a> para cualquier pregunta de privacidad, solicitud de acceso a datos o solicitud de eliminación. Respondemos en un plazo de 30 días.
+          </p>
+
+          <h2>2. Qué recopilamos</h2>
+
+          <h3>2.1 Información que ingresas</h3>
+          <p>
+            Al usar SnapScan, puedes escribir marcas, códigos UPC o nombres de productos en el buscador, y elegir un estado de EE.UU. Esta información se procesa en tu navegador para generar un veredicto. No enviamos tus búsquedas a nuestros servidores para registro o análisis. Sí enviamos el UPC o término de búsqueda a <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts</a> para que devuelvan los datos del producto — ver Sección 4.
+          </p>
+
+          <h3>2.2 Ubicación (solo si lo permites)</h3>
+          <p>
+            Para detectar tu estado automáticamente, SnapScan puede usar dos métodos opcionales:
+          </p>
+          <ul>
+            <li><strong>Aproximación por IP</strong> mediante un servicio externo (ipapi.co). Solo ocurre cuando haces clic en "Detectar mi estado" o en tu primera visita. Tu dirección IP se envía a ese servicio, que devuelve una región aproximada. Nosotros no recibimos ni almacenamos tu IP.</li>
+            <li><strong>Geolocalización del navegador</strong> como respaldo. Solo se usa si aceptas el aviso del navegador. Comparamos tus coordenadas con centros de estados localmente y solo conservamos el código de dos letras. No transmitimos tus coordenadas a ninguna parte.</li>
+          </ul>
+          <p>Puedes rechazar la ubicación y elegir tu estado manualmente en cualquier momento. Nunca te rastreamos con el tiempo.</p>
+
+          <h3>2.3 Cámara (solo si escaneas)</h3>
+          <p>
+            Si usas el escáner, tu navegador pedirá permiso para acceder a la cámara. La imagen se procesa totalmente en tu dispositivo con la librería de código abierto <a href="https://github.com/zxing-js/library" target="_blank" rel="noopener">ZXing</a>. No se envía video, imagen ni audio a nuestros servidores ni a terceros. Al reconocer un código o cerrar el escáner, el acceso a la cámara se detiene.
+          </p>
+
+          <h3>2.4 Información técnica</h3>
+          <p>
+            Al cargar la página, nuestro proveedor de hosting recibe registros estándar: IP, navegador, URL solicitada y marca de tiempo. Se usan solo para prevenir abuso y monitorear, y se retienen típicamente 30 días.
+          </p>
+
+          <h3>2.5 Lo que NO recopilamos</h3>
+          <ul>
+            <li>Nombre, email, teléfono o dirección</li>
+            <li>Números de cuenta SNAP/EBT ni saldos (nunca los tocamos — no estamos conectados con USDA ni ningún sistema estatal)</li>
+            <li>Información de pago (la app para consumidores es gratis)</li>
+            <li>Identificadores persistentes que te siguen entre sitios</li>
+            <li>Imágenes de cámara ni historial de escaneos</li>
+          </ul>
+
+          <h2>3. Cookies y almacenamiento local</h2>
+          <p>
+            SnapScan no coloca cookies propias. Usamos el <strong>localStorage</strong> del navegador para recordar dos preferencias pequeñas:
+          </p>
+          <ul>
+            <li><code>snapScanState</code> — el código de estado que elegiste (ej. <code>FL</code>)</li>
+            <li><code>snapScanLang</code> — tu idioma (<code>en</code>, <code>es</code> o <code>ht</code>)</li>
+          </ul>
+          <p>
+            Permanecen en tu dispositivo hasta que borres los datos del sitio. No contienen información identificable. Si tu navegador bloquea localStorage, SnapScan usa memoria temporal y tendrás que reseleccionar el estado cada visita.
+          </p>
+          <p>
+            Nuestro service worker también guarda el HTML, CSS y JS de la app en tu dispositivo para que funcione sin conexión. Puedes borrarlo cuando quieras desde la configuración del navegador.
+          </p>
+          <p>
+            Google AdSense puede establecer <strong>cookies de terceros</strong> — ver Sección 5.
+          </p>
+
+          <h2>4. Servicios de terceros</h2>
+          <p>Dependemos de los siguientes servicios. Cada uno tiene su propia política:</p>
+          <ul>
+            <li><strong>Open Food Facts</strong> — búsqueda de productos por UPC o marca. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Política de Privacidad</a></li>
+            <li><strong>ipapi.co</strong> — detección opcional de estado por IP. <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener">Política de Privacidad</a></li>
+            <li><strong>Fontshare</strong> — fuentes web. <a href="https://www.fontshare.com/privacy-policy" target="_blank" rel="noopener">Política de Privacidad</a></li>
+            <li><strong>unpkg (Cloudflare)</strong> — CDN de la librería ZXing. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Política de Privacidad</a></li>
+            <li><strong>Google AdSense</strong> — publicidad (ver Sección 5).</li>
+          </ul>
+
+          <h2>5. Publicidad (Google AdSense)</h2>
+          <p>
+            SnapScan es gratis. Para cubrir costos, mostramos anuncios de <strong>Google AdSense</strong>:
+          </p>
+          <ul>
+            <li>Google y sus socios publicitarios usan cookies e identificadores para mostrar anuncios basados en tus visitas previas a este y otros sitios ("publicidad personalizada").</li>
+            <li>Google usa la cookie <strong>DoubleClick DART</strong> y tecnologías similares.</li>
+            <li>Puedes desactivar la publicidad personalizada en <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Configuración de Anuncios de Google</a>.</li>
+            <li>Puedes desactivar el uso de cookies por terceros en <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info/choices</a> o, en la UE, <a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">youronlinechoices.eu</a>.</li>
+            <li>Más información: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</li>
+            <li>Las cookies de Google se rigen por la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.</li>
+          </ul>
+          <p>
+            Si estás en el EEE, Reino Unido o Suiza, SnapScan muestra un banner de consentimiento antes de cargar anuncios personalizados. Si lo rechazas, solo verás anuncios no personalizados basados en contexto.
+          </p>
+          <p>
+            <strong>No</strong> compartimos tus búsquedas, UPCs escaneados, estado elegido ni ningún uso de SnapScan con Google ni con anunciantes.
+          </p>
+
+          <h2>6. Privacidad infantil</h2>
+          <p>
+            SnapScan es para audiencia general y no está dirigida a menores de 13 años. No recopilamos conscientemente información de menores. Si crees que un menor aportó datos, contáctanos y los eliminaremos.
+          </p>
+
+          <h2>7. Tus derechos</h2>
+
+          <h3>7.1 Todos</h3>
+          <p>En cualquier momento puedes:</p>
+          <ul>
+            <li>Borrar los datos locales de SnapScan limpiando los datos del sitio en tu navegador</li>
+            <li>Revocar permisos de cámara o ubicación desde la configuración del navegador</li>
+            <li>Dejar de usar el sitio</li>
+          </ul>
+
+          <h3>7.2 UE / Reino Unido / EEE (RGPD)</h3>
+          <p>Si estás en la UE, Reino Unido o EEE, tienes derecho a:</p>
+          <ul>
+            <li>Acceder, corregir o eliminar los datos personales que procesamos sobre ti</li>
+            <li>Oponerte al tratamiento, incluido el marketing directo</li>
+            <li>Solicitar la limitación del tratamiento</li>
+            <li>Portabilidad de datos (copia en formato legible por máquina)</li>
+            <li>Retirar el consentimiento en cualquier momento</li>
+            <li>Presentar una queja ante tu autoridad local de protección de datos</li>
+          </ul>
+          <p>
+            Como no recopilamos información identificable, normalmente no hay nada que acceder o eliminar. La base legal principal es nuestro interés legítimo en proveer el servicio y, cuando aplica, tu consentimiento.
+          </p>
+
+          <h3>7.3 California (CCPA / CPRA)</h3>
+          <p>Los residentes de California tienen derecho a:</p>
+          <ul>
+            <li>Saber qué información personal recopilamos (esta política)</li>
+            <li>Solicitar eliminación de datos personales</li>
+            <li>Optar por no participar en la "venta" o "compartición" de datos para publicidad conductual</li>
+            <li>No sufrir discriminación por ejercer estos derechos</li>
+          </ul>
+          <p>
+            SnapScan no vende información personal. La publicidad personalizada de AdSense puede calificar como "compartición" bajo CPRA; puedes optar por no participar vía el banner o activando Global Privacy Control (GPC) en tu navegador — respetamos GPC.
+          </p>
+          <p>
+            Para ejercer cualquier derecho, escribe a <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+
+          <h2>8. Seguridad de datos</h2>
+          <p>
+            SnapScan se sirve por HTTPS. Como no guardamos datos de usuarios en nuestros servidores, no hay base de datos que vulnerar. La API para minoristas (producto separado) sí almacena claves hasheadas y conteos de uso en Supabase; ese lado tiene sus propias consideraciones y no lo usan los consumidores.
+          </p>
+
+          <h2>9. Transferencias internacionales</h2>
+          <p>
+            Nuestros servicios y los terceros que usamos operan globalmente. Si accedes desde fuera de EE.UU., tu interacción con esos servicios puede implicar transferencia de datos a EE.UU. u otros países. Los terceros mantienen salvaguardas (SCCs, UK IDTA, etc.) cuando corresponde.
+          </p>
+
+          <h2>10. Cambios a esta política</h2>
+          <p>
+            Podemos actualizar esta política para reflejar cambios en nuestras prácticas o en la ley. Actualizaremos la fecha arriba y, para cambios importantes, mostraremos un aviso en la página principal por al menos 30 días.
+          </p>
+
+          <h2>11. Contacto</h2>
+          <p>
+            ¿Preguntas o solicitudes? Escribe a <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- ============ KREYÒL AYISYEN ============ -->
+        <section class="legal-lang" data-lang="ht" hidden>
+          <p class="eyebrow">Legal · Konfidansyalite</p>
+          <h1>Règleman Konfidansyalite</h1>
+          <p class="muted"><strong>Dènye mizajou:</strong> 19 avril 2026</p>
+
+          <p class="lede">
+            SnapScan se yon zouti gratis ki ede moun ki gen SNAP/EBT tcheke si yon pwodwi kouvri dapre restriksyon eta yo pou 2026. Nou fè li pou pwoteje kliyan yo kont malèz nan kès la — sa vle di <strong>nou pa vle done w</strong> epi pwodwi a fèt konsa. Paj sa a eksplike egzakteman sa nou kolekte ak sa nou pa kolekte, kouman kouki ak reklam yo mache, ak dwa w yo.
+          </p>
+
+          <div class="tldr">
+            <h3>Vèsyon kout la</h3>
+            <ul>
+              <li>Nou pa mande w kreye yon kont. Nou pa konnen ki moun ou ye.</li>
+              <li>Nou pa estoke sa w eskane oswa chèche sou sèvè nou yo.</li>
+              <li>Eta w chwazi a sèlman sere sou aparèy ou.</li>
+              <li>Deteksyon lokalizasyon opsyonèl epi fèt yon sèl fwa; nou pa swiv ou.</li>
+              <li>Google AdSense ka afiche reklam epi itilize kouki dapre pwòp règleman yo.</li>
+              <li>Ou ka refize personalizasyon reklam, efase tout, oswa kite sit la nenpòt kilè.</li>
+            </ul>
+          </div>
+
+          <h2>1. Ki moun nou ye</h2>
+          <p>
+            SnapScan opere pa Lexx Automates, yon biznis endividyèl ki baze nan Coconut Creek, Florida, Ozetazini. Ou ka kontakte nou nan <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a> pou nenpòt kesyon konfidansyalite, demann aksè done, oswa demann efase. Nou reponn nan 30 jou.
+          </p>
+
+          <h2>2. Sa nou kolekte</h2>
+
+          <h3>2.1 Enfòmasyon ou antre</h3>
+          <p>
+            Lè w itilize SnapScan, ou ka tape non mak, kòd UPC, oswa non pwodwi nan bwat rechèch la, epi chwazi yon eta. Enfòmasyon sa a trete nan navigatè w pou pwodwi yon repons. Nou pa voye rechèch ou yo nan pwòp sèvè nou yo pou anrejistreman oswa analiz. Nou voye UPC oswa tèm rechèch la bay <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Open Food Facts</a> pou yo ka retounen done pwodwi — wè Seksyon 4.
+          </p>
+
+          <h3>2.2 Lokalizasyon (sèlman si w pèmèt)</h3>
+          <p>
+            Pou detekte eta w otomatikman, SnapScan ka itilize de metòd opsyonèl:
+          </p>
+          <ul>
+            <li><strong>Apwoksimasyon pa IP</strong> atravè yon sèvis tyè (ipapi.co). Sa fèt sèlman lè w klike "Detekte eta m" oswa nan premye vizit. Adrès IP w voye bay sèvis sa a, ki retounen yon rejyon apwoksimatif. Nou pa resevwa ni estoke IP w.</li>
+            <li><strong>Jewolokalizasyon navigatè</strong> kòm sipò. Sa itilize sèlman si w aksepte demann navigatè a. Nou konpare kowòdone w ak sant eta yo lokalman epi nou kenbe sèlman kòd de lèt la. Nou pa transmèt kowòdone w okenn kote.</li>
+          </ul>
+          <p>Ou ka refize aksè lokalizasyon epi chwazi eta w alamen nenpòt kilè. Nou pa swiv ou.</p>
+
+          <h3>2.3 Kamera (sèlman si w eskane)</h3>
+          <p>
+            Si w itilize eskanè a, navigatè w ap mande pèmisyon pou aksede kamera. Siyal kamera a trete konplètman sou aparèy ou pa bibliyotèk kòd louvri <a href="https://github.com/zxing-js/library" target="_blank" rel="noopener">ZXing</a>. Pa gen videyo, imaj, ni odyo ki voye bay sèvè nou yo oswa okenn lòt moun. Lè yon kòd ba rekonèt oswa ou fèmen dyalòg la, aksè kamera a kanpe.
+          </p>
+
+          <h3>2.4 Enfòmasyon teknik</h3>
+          <p>
+            Lè ou chaje paj la, founisè hosting nou an resevwa lis estanda sèvè web: adrès IP, ajan itilizatè navigatè, URL mande, ak lè. Yo itilize sèlman pou anpeche abi ak siveyans operasyonèl, epi tipikman kenbe pou 30 jou.
+          </p>
+
+          <h3>2.5 Sa nou PA kolekte</h3>
+          <ul>
+            <li>Non, imèl, telefòn, oswa adrès</li>
+            <li>Nimewo kont SNAP/EBT oswa balans benefis (nou pa janm manyen sa yo — nou pa konekte ak USDA oswa okenn sistèm eta)</li>
+            <li>Enfòmasyon pèman (app la gratis pou kliyan)</li>
+            <li>Idantifikatè pèmanan ki swiv ou atravè sit yo</li>
+            <li>Imaj kamera oswa istwa eskanaj</li>
+          </ul>
+
+          <h2>3. Kouki ak depo lokal</h2>
+          <p>
+            SnapScan li menm pa mete okenn kouki. Nou itilize <strong>localStorage</strong> nan navigatè w pou sonje de ti preferans:
+          </p>
+          <ul>
+            <li><code>snapScanState</code> — kòd eta ou chwazi a (pa egzanp <code>FL</code>)</li>
+            <li><code>snapScanLang</code> — preferans lang ou (<code>en</code>, <code>es</code>, oswa <code>ht</code>)</li>
+          </ul>
+          <p>
+            Yo rete sou aparèy ou jiskaske ou efase done sit la. Yo pa gen enfòmasyon idantifyab. Si navigatè w bloke localStorage, SnapScan itilize memwa tanporè epi w ap bezwen rechwazi eta w chak vizit.
+          </p>
+          <p>
+            Service worker nou an tou gade HTML, CSS, ak JavaScript app la sou aparèy ou pou SnapScan mache san entènèt. Ou ka efase sa nenpòt kilè nan paramèt navigatè w.
+          </p>
+          <p>
+            <strong>Kouki tyè</strong> ka mete pa Google AdSense — wè Seksyon 5.
+          </p>
+
+          <h2>4. Sèvis tyè</h2>
+          <p>Nou konte sou sèvis tyè sa yo. Chak gen pwòp règleman:</p>
+          <ul>
+            <li><strong>Open Food Facts</strong> — chèche pwodwi pa UPC oswa non mak. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">Règleman</a></li>
+            <li><strong>ipapi.co</strong> — deteksyon eta opsyonèl pa IP. <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener">Règleman</a></li>
+            <li><strong>Fontshare</strong> — fon web. <a href="https://www.fontshare.com/privacy-policy" target="_blank" rel="noopener">Règleman</a></li>
+            <li><strong>unpkg (Cloudflare)</strong> — CDN bibliyotèk ZXing. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Règleman</a></li>
+            <li><strong>Google AdSense</strong> — piblisite (wè Seksyon 5).</li>
+          </ul>
+
+          <h2>5. Piblisite (Google AdSense)</h2>
+          <p>
+            SnapScan gratis. Pou kouvri depans, nou montre reklam <strong>Google AdSense</strong>:
+          </p>
+          <ul>
+            <li>Google ak patnè piblisite li yo itilize kouki ak idantifikatè pou sèvi reklam ki baze sou vizit anvan w yo ("piblisite pèsonalize").</li>
+            <li>Google itilize kouki <strong>DoubleClick DART</strong> ak teknoloji menm jan an.</li>
+            <li>Ou ka refize piblisite pèsonalize nan <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Paramèt Reklam Google</a>.</li>
+            <li>Ou ka refize itilizasyon kouki pa tyè nan <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info/choices</a> oswa, nan UE, <a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">youronlinechoices.eu</a>.</li>
+            <li>Plis enfòmasyon: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</li>
+            <li>Kouki piblisite Google yo gouvène pa <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Règleman Konfidansyalite Google</a>.</li>
+          </ul>
+          <p>
+            Si w nan Zòn Ekonomik Ewopeyen, Wayòm Ini, oswa Swis, SnapScan montre yon banyè konsantman anvan li chaje reklam pèsonalize. Si w refize, ou ap wè sèlman reklam ki pa pèsonalize, baze sou kontèks.
+          </p>
+          <p>
+            Nou <strong>pa</strong> pataje rechèch ou yo, UPC eskane yo, eta w chwazi, ni okenn done itilizasyon SnapScan ak Google oswa anounsè.
+          </p>
+
+          <h2>6. Konfidansyalite timoun</h2>
+          <p>
+            SnapScan se yon zouti piblik jeneral epi li pa dirije sou timoun anba 13 tan. Nou pa kolekte enfòmasyon timoun anba 13 tan konsyèmman. Si w kwè yon timoun bay enfòmasyon, kontakte nou epi n ap efase li.
+          </p>
+
+          <h2>7. Dwa w yo</h2>
+
+          <h3>7.1 Tout moun</h3>
+          <p>Nenpòt kilè ou ka:</p>
+          <ul>
+            <li>Efase done SnapScan sere lokalman yo pa efase done sit nan navigatè w</li>
+            <li>Revoke pèmisyon kamera oswa lokalizasyon nan paramèt navigatè w</li>
+            <li>Kanpe itilize sit la</li>
+          </ul>
+
+          <h3>7.2 UE / Wayòm Ini / ZEE (GDPR)</h3>
+          <p>Si w nan UE, Wayòm Ini, oswa ZEE, ou gen dwa:</p>
+          <ul>
+            <li>Aksede, korije, oswa efase done pèsonèl nou trete sou ou</li>
+            <li>Opoze nan tretman, ki gen ladan maketing dirèk</li>
+            <li>Mande restriksyon tretman</li>
+            <li>Pòtabilite done (yon kopi nan fòma machin ka li)</li>
+            <li>Retire konsantman nenpòt kilè</li>
+            <li>Depoze yon plent nan otorite pwoteksyon done lokal ou</li>
+          </ul>
+          <p>
+            Paske nou pa kolekte enfòmasyon idantifyab, nòmalman nou pa gen anyen pou aksede oswa efase. Baz legal prensipal la se enterè lejitim nou pou bay sèvis la ak, lè sa aplikab, konsantman w.
+          </p>
+
+          <h3>7.3 Kalifòni (CCPA / CPRA)</h3>
+          <p>Rezidan Kalifòni gen dwa pou:</p>
+          <ul>
+            <li>Konnen ki enfòmasyon pèsonèl nou kolekte (règleman sa a)</li>
+            <li>Mande efase enfòmasyon pèsonèl</li>
+            <li>Refize "vant" oswa "pataj" enfòmasyon pou piblisite konpòtmantal</li>
+            <li>Pa soufri diskriminasyon pou egzèse dwa sa yo</li>
+          </ul>
+          <p>
+            SnapScan li menm pa vann enfòmasyon pèsonèl. Piblisite pèsonalize AdSense ka kalifye kòm "pataj" anba CPRA; ou ka refize pa banyè a oswa pa aktive Global Privacy Control (GPC) nan navigatè w — nou respekte siyal GPC.
+          </p>
+          <p>
+            Pou egzèse nenpòt dwa, voye imèl bay <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+
+          <h2>8. Sekirite done</h2>
+          <p>
+            SnapScan sèvi sou HTTPS. Paske nou pa estoke done itilizatè sou sèvè nou yo, pa gen baz done itilizatè pou vyole. API pou machann yo (yon pwodwi separe) estoke kle haché ak kont itilizasyon nan Supabase; bò sa a gen pwòp konsiderasyon li epi kliyan yo pa itilize li.
+          </p>
+
+          <h2>9. Transfè entènasyonal</h2>
+          <p>
+            Sèvis nou yo ak tyè yo nou itilize opere globalman. Si w aksede SnapScan deyò Etazini, entèraksyon w ak sèvis sa yo ka enplike transfè done nan Etazini oswa lòt peyi. Tyè yo mentni pwoteksyon (SCCs, UK IDTA, elatriye) kote sa nesesè.
+          </p>
+
+          <h2>10. Chanjman nan règleman sa a</h2>
+          <p>
+            Nou ka mete règleman sa a ajou pou reflete chanjman nan pratik nou yo oswa lwa aplikab. Nou ap mete ajou dat "Dènye mizajou" a anwo a epi, pou chanjman enpòtan, ajoute yon avi sou paj akèy la pou omwen 30 jou.
+          </p>
+
+          <h2>11. Kontak</h2>
+          <p>
+            Kesyon oswa demann? Voye imèl bay <a href="mailto:lexxautomates@gmail.com">lexxautomates@gmail.com</a>.
+          </p>
+        </section>
+
+        <p class="back-home"><a href="./">← <span data-i18n="privacy.back">Back to SnapScan</span></a></p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <p data-i18n="foot.disclaimer">Community-built. Not affiliated with USDA or any state agency. Verdicts are informational — your retailer's POS system is the authoritative source at checkout.</p>
+        <p class="small">© 2026 SnapScan · <a href="https://github.com/lexxautomates/snap-scan" target="_blank" rel="noopener" data-i18n="foot.github">Open source on GitHub</a> · <a href="./privacy.html" data-i18n="foot.privacy">Privacy</a></p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/consent.js"></script>
+    <script>
+      // Show only the section that matches the current language
+      (function () {
+        const I = window.SnapI18n;
+        function showLang(code) {
+          document.querySelectorAll(".legal-lang").forEach(el => {
+            el.hidden = el.dataset.lang !== code;
+          });
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+          I.applyTranslations();
+          const sel = document.getElementById("langSelect");
+          sel.value = I.getLang();
+          showLang(I.getLang());
+          sel.addEventListener("change", e => {
+            I.setLang(e.target.value);
+            showLang(e.target.value);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

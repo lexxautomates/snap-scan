@@ -104,7 +104,15 @@
       "verdict.viewData": "View product data",
 
       "foot.disclaimer": "Community-built. Not affiliated with USDA or any state agency. Verdicts are informational — your retailer's POS system is the authoritative source at checkout.",
-      "foot.github": "Open source on GitHub"
+      "foot.github": "Open source on GitHub",
+      "foot.privacy": "Privacy",
+
+      "privacy.back": "Back to SnapScan",
+
+      "consent.body": "SnapScan uses cookies and similar technologies from Google AdSense to show ads that keep the app free. We don't track your searches or sell your data.",
+      "consent.learnMore": "Privacy policy",
+      "consent.accept": "Accept ads",
+      "consent.reject": "Only non-personalized"
     },
 
     es: {
@@ -205,7 +213,15 @@
       "verdict.viewData": "Ver datos del producto",
 
       "foot.disclaimer": "Proyecto comunitario. No afiliado a USDA ni a ninguna agencia estatal. Los veredictos son informativos — el sistema POS del comercio es la fuente oficial al pagar.",
-      "foot.github": "Código abierto en GitHub"
+      "foot.github": "Código abierto en GitHub",
+      "foot.privacy": "Privacidad",
+
+      "privacy.back": "Volver a SnapScan",
+
+      "consent.body": "SnapScan usa cookies y tecnologías similares de Google AdSense para mostrar anuncios que mantienen la app gratis. No rastreamos tus búsquedas ni vendemos tus datos.",
+      "consent.learnMore": "Política de privacidad",
+      "consent.accept": "Aceptar anuncios",
+      "consent.reject": "Solo no personalizados"
     },
 
     ht: {
@@ -306,7 +322,15 @@
       "verdict.viewData": "Gade done pwodwi a",
 
       "foot.disclaimer": "Pwojè kominotè. Pa afilye ak USDA oswa okenn ajans eta. Repons yo se pou enfòmasyon — sistèm POS machann lan se sous ofisyèl la nan kès.",
-      "foot.github": "Kòd louvri sou GitHub"
+      "foot.github": "Kòd louvri sou GitHub",
+      "foot.privacy": "Konfidansyalite",
+
+      "privacy.back": "Retounen nan SnapScan",
+
+      "consent.body": "SnapScan itilize kouki ak teknoloji menm jan an de Google AdSense pou montre reklam ki kenbe app la gratis. Nou pa swiv rechèch ou yo ni vann done w.",
+      "consent.learnMore": "Règleman konfidansyalite",
+      "consent.accept": "Aksepte reklam",
+      "consent.reject": "Sèlman san pèsonalizasyon"
     }
   };
 
