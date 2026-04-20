@@ -2,6 +2,12 @@
 
 **SNAP/EBT eligibility for any product — check before you reach the register.**
 
+[![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/lexxautomates/snap-scan)
+&nbsp;[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lexxautomates/snap-scan&base=web)
+&nbsp;[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lexxautomates/snap-scan&root-directory=web)
+
+One-click deploy of the consumer PWA. Full walkthrough: [**DEPLOY_CLOUDFLARE_PAGES.md**](./DEPLOY_CLOUDFLARE_PAGES.md).
+
 Starting in 2026, 22 U.S. states are restricting what SNAP benefits can be spent on, with different rules per state. Rules range from West Virginia's narrow soda-only restriction to Iowa's blanket ban on all taxable food items. Retailer POS systems are inconsistent, and shoppers get surprised at checkout.
 
 SnapScan is a monorepo with three products:
@@ -151,6 +157,28 @@ fly deploy
 ```
 
 After deploying, update `window.SNAPSCAN_API_BASE` in `web/index.html` to your API URL, then redeploy the PWA.
+
+---
+
+## Deploying the PWA (`web/`) to a custom domain
+
+The consumer PWA is pure static files (no bundler), which means any static host works. **Cloudflare Pages** is recommended — unlimited bandwidth on free tier, auto HTTPS, auto-deploys on every `git push`.
+
+**One-click:**
+
+[![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/lexxautomates/snap-scan)
+
+**Manual setup** (~15 min end to end, including domain + TLS):
+
+1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** → pick `lexxautomates/snap-scan`
+2. Set **Build output directory** = `web`, leave **Build command** empty
+3. Deploy → site is live at `snapscan.pages.dev` in ~30s
+4. **Custom domains** tab → add your domain → Cloudflare provisions TLS automatically
+5. Submit the new domain to [Google AdSense](https://www.google.com/adsense) for approval
+
+Alternatives: [Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/lexxautomates/snap-scan&base=web) · [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/lexxautomates/snap-scan&root-directory=web) — same concept (connect the repo, set root to `web/`). Both are free tier–friendly with lower bandwidth caps than Cloudflare.
+
+Full walkthrough with DNS steps, troubleshooting, rollback, and why Cloudflare over the others: see [**DEPLOY_CLOUDFLARE_PAGES.md**](./DEPLOY_CLOUDFLARE_PAGES.md).
 
 ---
 
