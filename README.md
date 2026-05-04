@@ -10,11 +10,12 @@ One-click deploy of the consumer PWA. Full walkthrough: [**DEPLOY_CLOUDFLARE_PAG
 
 Starting in 2026, 22 U.S. states are restricting what SNAP benefits can be spent on, with different rules per state. Rules range from West Virginia's narrow soda-only restriction to Iowa's blanket ban on all taxable food items. Retailer POS systems are inconsistent, and shoppers get surprised at checkout.
 
-SnapScan is a monorepo with three products:
+SnapScan is a monorepo with four products:
 
 - **`web/`** — Consumer PWA. Search by brand or scan any barcode, get an instant per-state verdict. Multilingual (English, Español, Kreyòl Ayisyen).
 - **`api/`** — B2B eligibility API for grocery retailers, POS vendors, and fintechs. Stripe-billed, Supabase-backed, `GET /api/eligibility?upc=&state=` style.
 - **`shared/`** — Core logic (22 states, 8 restricted categories, `evaluateProduct()`) reused by both the web app and the API server.
+- **`chatgptapp/`** — MCP server for ChatGPT app/tool distribution. Reuses `api/` for live eligibility checks while keeping monetization centralized in Stripe-backed API billing.
 
 ---
 
@@ -100,6 +101,25 @@ In demo mode (no Supabase, no Stripe), the API:
 - Skips usage recording and quota enforcement
 - Returns hardcoded plan data
 - Still proxies Open Food Facts for real product lookups
+
+---
+
+## The ChatGPT App MCP Server (`chatgptapp/`)
+
+This package exposes SnapScan as an MCP app/tool server for ChatGPT-compatible clients.
+
+### Run locally
+
+```bash
+cd chatgptapp
+cp .env.example .env
+npm install
+npm start
+# http://localhost:9393/healthz
+# MCP endpoint: http://localhost:9393/mcp
+```
+
+By default it calls the local SnapScan API at `http://localhost:8787` using `SNAPSCAN_API_KEY=demo_chatgpt_app`.
 
 ### Retailer landing page
 
@@ -201,6 +221,10 @@ If any of the state's restricted categories match the product, `eligible` is `fa
 
 ```
 snap-scan/
+├── chatgptapp/              # MCP server for ChatGPT app/tools
+│   ├── src/server.mjs
+│   ├── .env.example
+│   └── package.json
 ├── shared/                  # ESM modules, source of truth for state + category logic
 │   ├── states.mjs
 │   └── categories.mjs

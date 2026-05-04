@@ -1,0 +1,19 @@
+{
+  "name": "snapscan-chatgptapp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SnapScan MCP server for ChatGPT app distribution and monetized lead funnel",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.0",
+    "zod": "^4.1.12"
+  }
+}
